@@ -50,7 +50,7 @@ then do: ```repo sync```
 
 ```lunch```
 
-```select 14 (lineageos_karnak-userdebug)``
+```select 14 (lineageos_karnak-userdebug)```
 
 ## Step 4: Select Build.
 
