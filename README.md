@@ -31,3 +31,51 @@ https://github.com/srccrow/karnak_manifests/blob/main/karnak.xml
 save it to: ```~/android/lineage/.repo/local_manifests/karnak.xml```
 
 then do: ```repo sync```
+
+## Step 3: Turn on caching to speed up build. Note that I used 300Gb instead of 100Gb (just personal preference).
+
+```mkdir ~/ccache```
+
+```export CCACHE_DIR=~/ccache```
+
+```export USE_CCACHE=1```
+
+```export CCACHE_EXEC=/usr/bin/ccache```
+
+```ccache -M 300G```
+
+## Step 4: Select Build.
+
+```source build/envsetup.sh```
+
+```lunch```
+
+```select 14 (lineageos_karnak-userdebug)``
+
+## Step 4: Select Build.
+
+```source build/envsetup.sh```
+
+```lunch```
+
+```select 14 (lineageos_karnak-userdebug)```
+
+## Step 5: Prepare the output.
+
+```make clean-apache-xml```
+
+```make apache-xml```
+
+```make clean-ims-common```
+
+```make ims-common```
+
+```make apache-xml```
+
+## Step 6: Build it!
+
+```brunch karnak```
+
+# Credits:
+
+https://forum.xda-developers.com/t/rom-unstable-unlocked-karnak-lineage-18-1-25-october-2021.4352241
