@@ -20,17 +20,17 @@
 
 ```cd ~/android/lineage```
 
-```repo init -u https://github.com/LineageOS/android.git -b lineage-18.1```
+```repo init -u https://github.com/LineageOS/android.git -b lineage-18.1 -g default,-darwin```
 
 ## Step 2: Get the device manifest file.
 
 https://github.com/srccrow/karnak_manifests
 
-https://github.com/srccrow/karnak_manifests/blob/main/karnak.xml
+https://github.com/srccrow/karnak_manifests/blob/main/device_manifest.xml
 
-save it to: ```~/android/lineage/.repo/local_manifests/karnak.xml```
+save it to: ```~/android/lineage/.repo/local_manifests/device_manifest.xml```
 
-then do: ```repo sync```
+then do: ```repo sync --jobs=32```
 
 ## Step 3: Turn on caching to speed up build. Note that I used 300Gb instead of 100Gb (just personal preference).
 
