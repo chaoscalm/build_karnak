@@ -44,37 +44,21 @@ then do: ```repo sync --jobs=32```
 
 ```ccache -M 300G```
 
-## Step 4: Select Build.
-
-```source build/envsetup.sh```
-
-```lunch```
-
-```select 14 (lineageos_karnak-userdebug)```
+```export ANDROID_JACK_VM_ARGS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx4G"```
 
 ## Step 4: Select Build.
 
 ```source build/envsetup.sh```
 
-```lunch```
+```rm -rf out/target/product/karnak/obj/KERNEL_OBJ/.version```
 
-```select 14 (lineageos_karnak-userdebug)```
+```rm -rf out/target/product/karnak/obj/KERNEL_OBJ/.config.old```
 
-## Step 5: Prepare the output.
+```lunch lineage_karnak-userdebug```
 
-```make clean-apache-xml```
+## Step 5: Build it!
 
-```make apache-xml```
-
-```make clean-ims-common```
-
-```make ims-common```
-
-```make apache-xml```
-
-## Step 6: Build it!
-
-```brunch karnak```
+```cmka```
 
 # Credits:
 
