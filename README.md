@@ -60,6 +60,8 @@ then do: ```repo sync --jobs=32```
 
 ```cmka```
 
+```brunch karnak```
+
 # Credits:
 
 https://forum.xda-developers.com/t/rom-unstable-unlocked-karnak-lineage-18-1-25-october-2021.4352241
