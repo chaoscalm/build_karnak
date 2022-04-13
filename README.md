@@ -28,7 +28,9 @@ https://github.com/srccrow/karnak_manifests
 
 https://github.com/srccrow/karnak_manifests/blob/main/device_manifest.xml
 
-save it to: ```~/android/lineage/.repo/local_manifests/device_manifest.xml```
+https://github.com/srccrow/karnak_manifests/blob/main/linaro_manifest.xml
+
+save them to: ```~/android/lineage/.repo/local_manifests```
 
 then do: ```repo sync --jobs=32```
 
