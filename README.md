@@ -37,7 +37,9 @@ then do: ```repo sync --jobs=32```
 fix the kernel:
 
 ```sed -i 's/const const struct/const struct/g' kernel/amazon/karnak/drivers/pinctrl/mediatek/pinctrl-mtk-common.h```
+
 ```sed -i 's/CONFIG_FRAME_WARN=1500/CONFIG_FRAME_WARN=1520/g' kernel/amazon/karnak/arch/arm64/configs/lineageos_karnak_defconfig```
+
 ```sed -i 's/CONFIG_FRAME_WARN,COMMON,,,1500,1500,1500,1500,1500,1500/CONFIG_FRAME_WARN,COMMON,,,1520,1520,1520,1520,1520,1520/g' kernel/amazon/karnak/scripts/kcrs/correct_config.csv```
 
 ## Step 3: Turn on caching to speed up build. Note that I used 300Gb instead of 100Gb (just personal preference).
