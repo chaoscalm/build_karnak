@@ -34,7 +34,7 @@ save them to: ```~/android/lineage/.repo/local_manifests```
 
 then do: ```repo sync --jobs=32```
 
-fix the kernel:
+Fix the kernel:
 
 ```sed -i 's/const const struct/const struct/g' kernel/amazon/karnak/drivers/pinctrl/mediatek/pinctrl-mtk-common.h```
 
@@ -72,6 +72,12 @@ fix the kernel:
 
 ```brunch karnak```
 
+## Step 6: Replace boot.img
+
+Replace boot.img inside the zip.
+
 # Credits:
 
 https://forum.xda-developers.com/t/rom-unstable-unlocked-karnak-lineage-18-1-25-october-2021.4352241
+
+https://gitlab.com/mt8163/karnak_releases
