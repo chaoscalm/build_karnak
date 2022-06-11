@@ -26,7 +26,7 @@
 
 https://github.com/srccrow/karnak_manifests
 
-https://github.com/srccrow/karnak_manifests/blob/main/device_manifest.xml
+https://github.com/srccrow/karnak_manifests/blob/main/karnak_manifest.xml
 
 https://github.com/srccrow/karnak_manifests/blob/main/linaro_manifest.xml
 
