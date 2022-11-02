@@ -34,7 +34,7 @@ save them to: ```~/android/lineage/.repo/local_manifests```
 
 then do: ```repo sync --jobs=32```
 
-Fix the kernel:
+**Fix the kernel:**
 
 ```sed -i 's/const const struct/const struct/g' kernel/amazon/karnak/drivers/pinctrl/mediatek/pinctrl-mtk-common.h```
 
