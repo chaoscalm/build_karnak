@@ -74,7 +74,11 @@ Fix the kernel:
 
 ## Step 6: Replace boot.img
 
-Replace boot.img inside the zip.
+Replace boot.img inside the rom.zip, 
+
+the SHA256 for the correct boot.img that allows to boot the OS is the following:
+
+``SHA256: dbd503c5b6b8fd3652b93d5bc75ff666ac667607fe0f3cca7773e93b04d57c2f``
 
 # Credits:
 
