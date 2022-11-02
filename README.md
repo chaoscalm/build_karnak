@@ -86,6 +86,6 @@ the SHA256 for the correct boot.img that allows to boot the OS is the following:
 
 https://gitlab.com/mt8163/karnak_releases
 
-**Kingladar** for fixing the kernel compilation and advices on how to build this rom,
+**kingladar** for fixing the kernel compilation and advices on how to build this rom,
 
 https://forum.xda-developers.com/t/rom-unstable-unlocked-karnak-lineage-18-1-25-october-2021.4352241
