@@ -24,11 +24,11 @@
 
 ## Step 2: Get the device manifest file.
 
-https://github.com/srccrow/karnak_manifests
+https://github.com/chaoscalm/karnak_manifests
 
-https://github.com/srccrow/karnak_manifests/blob/main/karnak_manifest.xml
+https://github.com/chaoscalm/karnak_manifests/blob/main/karnak_manifest.xml
 
-https://github.com/srccrow/karnak_manifests/blob/main/linaro_manifest.xml
+https://github.com/chaoscalm/karnak_manifests/blob/main/linaro_manifest.xml
 
 save them to: ```~/android/lineage/.repo/local_manifests```
 
